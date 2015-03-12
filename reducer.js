@@ -14,3 +14,11 @@ var modifyData = function(){
     reducedData = result;
   });
 };
+
+var logData = function() {
+  if (!reducedData){
+    console.log('You need to Modify the data first');
+    return;
+  }
+  console.log(JSON.stringify(reducedData, null, 2));
+}
