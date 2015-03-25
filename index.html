@@ -8,10 +8,12 @@
   </head>
   <body>
     <h1>Rata Reducer Premium</h1>
+    <div class="name"><a href="jonsadka.com">Jon Sadka</a></div>
     <script type="text/javascript" src="reducer.js" charset="utf-8"></script>
-    <div class="container">
-      <button class="button green center" onclick="modifyData()">Modify the data</button>
-      <button class="button light center" onclick="logData()">Console.log the data</button>
+    <div id="result-textarea">
+      <button class="button blue" onclick="modifyData()">Modify the data</button>
+      <h3 id="operation-result"></h3>
+      <textarea id="convertedJSON" placeholder="Result will appear here when completed"></textarea>
     </div>
   </body>
 </html>
